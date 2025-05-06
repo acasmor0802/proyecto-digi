@@ -1,54 +1,54 @@
-# Cómo contribuir
+# How to Contribute
 
-¡Gracias por tu interés en mejorar este proyecto de backups cifrados en formato ZIP con subida automática a Google Drive! Este documento describe cómo puedes colaborar con el código, reportar errores o proponer mejoras. Asegúrate de leerlo con atención para entender el proceso de contribución.
+Thank you for your interest in improving this project for encrypted ZIP backups with automatic upload to Google Drive! This document describes how you can contribute code, report bugs, or suggest improvements. Please read it carefully to understand the contribution process.
 
-## Proceso de Contribución
+## Contribution Process
 
-Para contribuir al código, sigue estos pasos generales:
+To contribute to the code, follow these general steps:
 
-- **Haz un fork** del repositorio oficial en GitHub para tener tu copia personal.  
-- **Clona tu fork** en tu máquina local (`git clone <tu-fork-url>`).  
-- **Crea una rama (branch)** para tus cambios (`git checkout -b mi-nueva-funcionalidad`), con un nombre descriptivo.  
-- **Realiza cambios** en esa rama siguiendo el estilo de código del proyecto. Asegúrate de probar y que tu código funcione correctamente.  
-- **Agrega y haz commit** de tus cambios con mensajes claros y concisos (por ejemplo, “Añadir soporte para múltiples carpetas” o “Corregir error en cifrado de archivos”).  
-- **Envía (push)** tu rama con los commits a tu repositorio remoto en GitHub (`git push origin mi-nueva-funcionalidad`).  
-- **Abre un Pull Request (PR)** desde tu rama en tu fork hacia la rama principal (`main`) del proyecto original. En el PR, describe detalladamente los cambios que propones y por qué son útiles.  
+- **Fork** the official repository on GitHub to create your own personal copy.  
+- **Clone your fork** to your local machine (`git clone <your-fork-url>`).  
+- **Create a branch** for your changes (`git checkout -b my-new-feature`) with a descriptive name.  
+- **Make your changes** in that branch following the project’s coding style. Be sure to test and ensure your code works properly.  
+- **Add and commit** your changes with clear and concise messages (e.g., “Add support for multiple folders” or “Fix file encryption bug”).  
+- **Push** your branch with the commits to your remote GitHub repository (`git push origin my-new-feature`).  
+- **Open a Pull Request (PR)** from your branch in your fork to the `main` branch of the original project. In the PR, describe the changes you’re proposing and why they are useful.  
 
-Los mantenedores revisarán tu PR. Pueden pedirte cambios o mejoras antes de fusionarlo. Por favor responde amablemente a los comentarios y mantén el PR actualizado con nuevos commits si es necesario. Cuando tu PR sea aceptado, se integrará en el proyecto. 
+The maintainers will review your PR. They may request changes or improvements before merging. Please respond kindly to comments and keep the PR updated with new commits if needed. Once accepted, your PR will be merged into the project.
 
-## Estilo de Código
+## Code Style
 
-La consistencia del código es fundamental. Este proyecto sigue las convenciones de estilo de Python (PEP 8). Se recomienda usar herramientas como:
+Code consistency is essential. This project follows Python’s style conventions (PEP 8). It is recommended to use tools such as:
 
-- **Black**: formateador automático (`black .`)
-- **Flake8**: analizador estático (`flake8`)
+- **Black**: auto-formatter (`black .`)
+- **Flake8**: static code analyzer (`flake8`)
 
-Escribe nombres de variables, funciones y clases de manera descriptiva. Usa comentarios y docstrings explicativos en funciones nuevas.
+Use descriptive names for variables, functions, and classes. Add explanatory comments and docstrings to new functions.
 
-## Reportar errores y sugerir mejoras
+## Reporting Bugs and Suggesting Improvements
 
-Usa la sección de *Issues* del repositorio para:
+Use the repository’s *Issues* section to:
 
-1. **Buscar si ya existe** un issue similar.
-2. **Abrir uno nuevo** con título claro y descripción detallada.
-3. Etiquetar como “bug” o “enhancement” si tienes permisos.
+1. **Check if a similar issue** already exists.
+2. **Open a new one** with a clear title and detailed description.
+3. Tag it as “bug” or “enhancement” if you have permission.
 
-Sigue el código de conducta y mantén una comunicación respetuosa.
+Please follow the code of conduct and maintain respectful communication.
 
-## Ideas para ampliar el proyecto
+## Ideas to Expand the Project
 
-Algunas ideas de mejora:
+Some improvement ideas:
 
-- Soporte para múltiples carpetas.
-- Archivo de configuración JSON/YAML.
-- Interfaz web (Streamlit, Flask).
-- Subida a otros servicios (Dropbox, S3, etc.).
-- Notificaciones al finalizar backup.
-- Backups incrementales.
-- Tareas programadas internas.
+- Support for multiple folders.
+- JSON/YAML configuration file.
+- Web interface (Streamlit, Flask).
+- Upload to other services (Dropbox, S3, etc.).
+- Notifications after backup completion.
+- Incremental backups.
+- Internal scheduled tasks.
 
-Si tienes otras ideas, abre un issue o propón un PR.
+If you have other ideas, open an issue or propose a PR.
 
-## Agradecimientos
+## Acknowledgements
 
-¡Gracias por tu interés en contribuir! Este proyecto mejora gracias a colaboradores como tú. Si tienes preguntas, abre un issue o contacta a los mantenedores.
+Thank you for your interest in contributing! This project grows better thanks to contributors like you. If you have any questions, open an issue or contact the maintainers.
