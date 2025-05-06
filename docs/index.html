@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Documentación Backup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .integration-diagram { background: #f8f9fa; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .badge { background: #2c3e50 !important; }
+        .interop-list { list-style-type: circle; padding-left: 25px; }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Backup Seguro</a>
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#integration">Integración 6i</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Página 1: Home -->
+    <div class="container mt-4" id="home">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mb-4">Sistema de Backup Automatizado</h2>
+                <div class="alert alert-info">
+                    Documentación técnica para el criterio 6i (Integración de sistemas)
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Página 2: Integración 6i -->
+    <div class="container mt-4" id="integration">
+        <h3 class="mb-4">🔗 Integración de Sistemas (Criterio 6i)</h3>
+
+        <!-- Diagrama de Integración -->
+        <div class="integration-diagram">
+            <h5>Arquitectura del Sistema</h5>
+            <img src="https://via.placeholder.com/1200x400" alt="Diagrama de integración" class="img-fluid mb-3">
+            
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title"><span class="badge">1</span> Sistema de Archivos</h6>
+                            <p class="card-text">
+                                <strong>Interacción:</strong> Uso de <code>os.walk</code> para recorrer directorios<br>
+                                <strong>Ejemplo:</strong> 
+                                <pre>for root, dirs, files in os.walk("./mi_carpeta")</pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title"><span class="badge">2</span> Cifrado AES</h6>
+                            <p class="card-text">
+                                <strong>Interoperabilidad:</strong> Claves Fernet base64<br>
+                                <strong>Ejemplo API:</strong>
+                                <pre>fernet = Fernet(key)<br>encrypted = fernet.encrypt(data)</pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6 class="card-title"><span class="badge">3</span> Google Drive</h6>
+                            <p class="card-text">
+                                <strong>Integración:</strong> PyDrive con OAuth2<br>
+                                <strong>Flujo:</strong>
+                                <pre>drive = GoogleDrive(gauth)<br>file.Upload()</pre>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mejoras de Interoperabilidad -->
+        <div class="mt-5">
+            <h4>🚀 Mejoras Propuestas</h4>
+            <ul class="interop-list">
+                <li>
+                    <strong>API Unificada para Multi-Cloud:</strong>
+                    <pre>class CloudStorage:
+    def upload(self, provider): ...</pre>
+                </li>
+                <li>
+                    <strong>Sistema de Logs Centralizado:</strong>
+                    <pre>POST /logs { "evento": "backup", "status": "ok" }</pre>
+                </li>
+                <li>
+                    <strong>Middleware de Transformación de Datos:</strong>
+                    <pre>def convert_to(format): 
+    if format == "parquet": ...</pre>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
