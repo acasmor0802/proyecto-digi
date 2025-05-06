@@ -35,3 +35,7 @@ From the project root, navigate to the src directory and run the main script:
     python digi.py
    ```
 This will start the backup process, including encryption and automatic upload to Google Drive.
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo los términos de la [Licencia MIT](./LICENSE).
