@@ -1,38 +1,37 @@
-## Motivación
+## Motivation
 
-En los entornos empresariales modernos, la integridad y disponibilidad de los datos son críticas para la continuidad operativa y el cumplimiento normativo. Este proyecto ofrece una solución de backup automatizada y cifrada que comprime una carpeta objetivo, la cifra usando Fernet y la sube a Google Drive. Esto garantiza que los datos sensibles estén seguros en tránsito y en reposo, al tiempo que permite una restauración sencilla cuando sea necesario.
+In modern business environments, data integrity and availability are critical for operational continuity and regulatory compliance. This project provides an automated and encrypted backup solution that compresses a target folder, encrypts it using Fernet, and uploads it to Google Drive. This ensures that sensitive data is secure both in transit and at rest, while allowing for easy restoration when needed.
 
-## Inicio Rápido
+## Quick Start
 
-### Prerrequisitos
+### Prerequisites
 
-- Python 3.7 o superior  
-- Un proyecto en Google Cloud con la API de Drive habilitada  
-- `client_secrets.json` desde la Consola de Google Cloud  
+- Python 3.7 or higher  
+- A Google Cloud project with the Drive API enabled  
+- `client_secrets.json` downloaded from the Google Cloud Console  
 
-### Instalación
+### Installation
 
-1. Clona el repositorio:  
+1. Clone the repository:  
    ```bash
    git clone https://github.com/acasmor0802/proyecto-digi.git
    ```
-2. Crea y activa un entorno virtual
+2. Create and activate a virtual environment:
    ```bash
     python -m venv venv
     venv\Scripts\activate
    ```
-3. Instala las dependencias necesarias:
+3. Install the required dependencies:
    ```bash
     pip install -r requirements.txt
    ```
-4. Asegúrate de colocar tu archivo `client_secrets.json` dentro del directorio `src/`.
-   Este archivo contiene las credenciales de Google necesarias para subir los respaldos a Google Drive.
+4. Make sure to place your `client_secrets.json` file inside the `src/` directory.
+This file contains the necessary Google credentials to upload the backups to Google Drive.
 
-### Ejecución
-
-Desde la raíz del proyecto, navega al directorio src y ejecuta el script principal:
+### Execution
+From the project root, navigate to the src directory and run the main script:
    ```bash
     cd src
     python digi.py
    ```
-Esto iniciará el proceso de copia de seguridad, cifrado y subida automática a Google Drive.
+This will start the backup process, including encryption and automatic upload to Google Drive.
