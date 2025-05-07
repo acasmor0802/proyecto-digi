@@ -1,0 +1,27 @@
+# DEVLOG
+
+## [v1.0.0] – 2025-05-07
+### Added
+- **Full backup & upload workflow** (`digi.py`): zip → encrypt → upload → history management  
+  _Objective: Business continuity & Cloud strategy_  
+- **Detailed logging** of every step in `logs/`  
+  _Objective: Compliance & Audit readiness_  
+
+## [v0.9.0] – 2025-04-20
+### Added
+- **Decryption & extraction script** (`decrypt.py`)  
+  _Objective: Information security & Data recoverability_  
+
+## [v0.8.0] – 2025-04-10
+### Added
+- **Fernet-based encryption** for backups in `digi.py`  
+  _Objective: Information security (confidentiality)_  
+- **Client secrets integration** with Google OAuth (`client_secrets.json`)  
+  _Objective: Cloud strategy & Secure authentication_  
+
+## [v0.7.0] – 2025-03-30
+### Added
+- **Initial ZIP backup** functionality (`digi.py`): compresses a folder into `backup.zip`  
+  _Objective: Automation of manual backups (efficiency)_  
+- **Hardcoded paths** for source folder and output (`./mi_carpeta` → `./backups`)  
+  _Objective: Quick proof-of-concept for backup process_
